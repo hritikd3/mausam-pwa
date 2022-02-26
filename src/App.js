@@ -23,6 +23,7 @@ const App = () => {
           onChange={(e) => setQuery(e.target.value)}
           onkeypress={search}
         />
+        {weather.main && <div className="city"></div>}
       </div>
     </>
   );
